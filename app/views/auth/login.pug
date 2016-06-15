@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  .col-md-2.col-xs-1
+  .col-md-8.text-center.box.col-xs-10
+    h1 Log in
+    form(role="form")
+      input(type='email' class="form-control" id="email" placeholder='email')
+    form(role="form")
+      input(type='password' class="form-control" id='password' placeholder='password')
+    .text-center
+      button(type='submit' class='btn btn-primary center') Submit
+  .col-md-2.col-xs-1
