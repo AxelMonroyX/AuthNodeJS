@@ -1,33 +1,33 @@
 var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+  rootPath = path.normalize(__dirname + '/..'),
+  env = process.env.NODE_ENV || 'development';
 
 var config = {
   development: {
     root: rootPath,
     app: {
-      name: 'blog'
+      name: 'AuthNodeJS'
     },
     port: process.env.PORT || 3000,
-    //db: 'mongodb://localhost/blog-development'
+    db: 'mongodb://admin:supersecret@ds037145.mlab.com:37145/restfulapp'
   },
 
   test: {
     root: rootPath,
     app: {
-      name: 'blog'
+      name: 'AuthNodeJS'
     },
     port: process.env.PORT || 3000,
-    //db: 'mongodb://localhost/blog-test'
+    db: 'mongodb://admin:supersecret@ds037145.mlab.com:37145/restfulapp'
   },
 
   production: {
     root: rootPath,
     app: {
-      name: 'blog'
+      name: 'AuthNodeJS'
     },
     port: process.env.PORT || 3000,
-    //db: 'mongodb://localhost/blog-production'
+    db: 'mongodb://admin:supersecret@ds037145.mlab.com:37145/restfulapp'
   }
 };
 
